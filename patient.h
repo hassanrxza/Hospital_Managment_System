@@ -1,5 +1,11 @@
 #include <stdlib.h>
 
+#ifndef PATIENT_H
+#define PATIENT_H
+
+#endif
+
+
 #define MAX_PATIENTS 100 // Maximum number of patients the system can handle
 #define MAX_NAME_LEN 50  // Maximum length for names
 #define MAX_BEDS 20      // Total number of beds in the hospital
@@ -7,6 +13,7 @@
 
 // Structure to store patient details
 typedef struct {
+    char id[MAX_NAME_LEN];
     char name[MAX_NAME_LEN];       // Patient's name
     int age;                       // Patient's age
     char gender[10];               // Patient's gender
@@ -26,4 +33,5 @@ int assignBed();
 void addPatient();
 void viewPatients();
 void checkBedAvailability();
+void generateBill();
 void menu();

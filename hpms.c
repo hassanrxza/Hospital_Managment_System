@@ -1,8 +1,11 @@
-#include "patient.c"
+#include <stdio.h>
+#include <stddef.h>
+#include "patient.h"
 
 #define MAX_PATIENTS 100 // Maximum number of patients the system can handle
 #define MAX_NAME_LEN 50  // Maximum length for names
 #define MAX_BEDS 20      // Total number of beds in the hospital
+
 
 void checkData()
 {

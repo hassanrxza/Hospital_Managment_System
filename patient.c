@@ -1,6 +1,6 @@
-#include "patient.h"
 #include <stdio.h>
 #include <string.h>
+#include "patient.h"
 
 Patient *createPatient(Patient *array) {
 
