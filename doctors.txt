@@ -1,1 +1,10 @@
-Init Doctors Data
+Dr. Mentzer, Cardiology
+Dr. Haris, Neurology
+Dr. Mike, Orthopedics
+Dr. Bhihari, Pediatrics
+Dr. Usman, Oncology
+Dr. babu, Dermatology
+Dr. Ali, Gastroenterology
+Dr. Hadi, Psychiatry
+Dr. Muzammil, Urology
+Dr. Ahsan, General Medicine
