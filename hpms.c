@@ -258,10 +258,31 @@ void viewPatients() {
 
 // Check real-time bed availability
 void viewAllBeds() {
-    printf("\n--- Bed Availability ---\n");
+    printf("\n--- Real-Time Bed Status ---\n");
+    printf("Bed Number\tStatus\t\tPatient Name\n");
+    printf("-------------------------------------------------\n");
+   
     for (int i = 0; i < MAX_BEDS; i++) {
-        printf("Bed %d: %s\n", i + 1, availableBeds[i] ? "Available" : "Occupied");
+        if (availableBeds[i]) {
+            printf("Bed %d\t\tAvailable\t-\n", i + 1);
+        } else {
+            // Find the patient assigned to this bed
+            int found = 0;
+            for (int j = 0; j < totalPatients; j++) {
+                if (patients[j].bedNumber == i + 1) {
+                    printf("Bed %d\t\tOccupied\t%s\n", i + 1, patients[j].name);
+                    found = 1;
+                    break;
+                }
+            }
+            if (!found) {
+                // Fallback in case of data inconsistency
+                printf("Bed %d\t\tOccupied\tUnknown\n", i + 1);
+            }
+        }
     }
+   
+    printf("-------------------------------------------------\n");
 }
 
 // Generate bill for a patient
@@ -394,9 +415,13 @@ int authenticate(const char *username, const char *password, const char *role) {
 
 // Display welcome banner
 void displayBanner() {
-    printf("==================================\n");
-    printf("     Hospital Management System   \n");
-    printf("==================================\n");
+    printf("\n");
+    printf("************************************************************************************************************************\n\n");
+    printf("                                            Hospital Management System                                  \n\n");
+    printf("************************************************************************************************************************\n\n");
+    printf("                                       Efficient | Reliable | User-friendly                               \n\n");
+    printf("************************************************************************************************************************\n\n");
+
 }
 
 int main() {
