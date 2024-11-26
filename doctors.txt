@@ -1,10 +1,10 @@
-Dr. Cardio, Cardiology
-Dr. Neuro, Neurology
-Dr. Ortho, Orthopedics
-Dr. Pead, Pediatrics
-Dr. Onco, Oncology
-Dr. Derna, Dermatology
-Dr. Gastro, Gastroenterology
-Dr. Psych, Psychiatry
-Dr. Uro, Urology
-Dr. General, General Medicine
+Dr. Haris(Cardio), Cardiology
+Dr. Usman(Neuro), Neurology
+Dr. Hadi(Ortho), Orthopedics
+Dr. Hassan(Pead), Pediatrics
+Dr. Ahsan(Onco), Oncology
+Dr. Umais(Derma), Dermatology
+Dr. Muhib(Gastro), Gastroenterology
+Dr. Muzammil(Psych), Psychiatry
+Dr. Saad(Uro), Urology
+Dr. Anas(General), General Medicine
